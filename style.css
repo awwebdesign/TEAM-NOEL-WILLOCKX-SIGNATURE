@@ -263,6 +263,8 @@ html.menu-open, html.menu-open body { overflow: hidden; }
    Manifest en cijfers
    ========================================================================== */
 .manifest { padding-block: clamp(7rem, 16vw, 14rem) var(--sectie); position: relative; }
+/* met beweging: de tekst komt op uit de pupil terwijl de kop nog vastgepind staat */
+.duik .manifest { z-index: 3; margin-top: -70vh; background: linear-gradient(to bottom, rgba(5, 10, 31, 0), var(--nacht) 70vh); }
 .manifest-t { font-weight: 250; font-size: clamp(1.8rem, 3.9vw, 4rem); line-height: 1.12; letter-spacing: -.03em; max-width: 21em; text-wrap: pretty; margin-bottom: 3rem; }
 .anim .manifest-t .sw { opacity: .14; transition: opacity .25s linear; }
 .cijfers { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: clamp(5rem, 10vw, 9rem); border-top: 1px solid var(--lijn-d); }

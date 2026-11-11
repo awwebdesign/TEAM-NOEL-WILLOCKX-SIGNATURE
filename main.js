@@ -137,8 +137,8 @@
     function bij() {
       var p = plaats(oog.w, oog.h), s = S.scroll;
       oog.zet({
-        pupil: S.intro + S.wijd * 0.09 + Math.pow(s, 2.3) * 5.2,
-        schaal: 1 + s * 1.1,
+        pupil: S.intro + S.wijd * 0.09 + Math.pow(s, 3.2) * 1.25,
+        schaal: 1 + Math.pow(s, 1.4) * 3.6,
         dx: (0.5 - p.x / oog.w) * s,
         dy: (0.5 - p.y / oog.h) * s,
         licht: Math.max(0, 1 - s * 1.8)
@@ -162,6 +162,7 @@
 
     // scrollen: de camera duikt de pupil in, die wordt de nacht van de volgende sectie
     if (GS) {
+      document.body.classList.add('duik');
       var tekst = $$('.held-in, .held-klok, .held-scroll, .held-bijschrift', held);
       ScrollTrigger.create({
         trigger: held, start: 'top top', end: '+=115%', pin: true, scrub: true, anticipatePin: 1,
