@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "noel-willockx-signature",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5181", "--directory", "C:/Users/Axel/OneDrive/WEBDEV/TEAM NOEL-WILLOCKX-SIGNATURE"],
+      "port": 5181
+    }
+  ]
+}

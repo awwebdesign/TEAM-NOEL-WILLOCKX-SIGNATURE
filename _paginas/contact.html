@@ -1,0 +1,56 @@
+<!-- {"title": "Contact · Team Noel-Willockx", "desc": "Neem contact op met Team Noel-Willockx: vraag een duif aan, plan een hokbezoek of zet je op de wachtlijst voor de jongen van 2027."} -->
+<section class="pkop donker" aria-labelledby="pt">
+  <canvas class="pkop-oog" data-zaad="BE21-6130226" data-kleur="oranje" aria-hidden="true"></canvas>
+  <div class="omslag pkop-in">
+    <nav class="kruimel mono" aria-label="Kruimelpad" data-in><a href="index.html">Home</a><span aria-current="page">Contact</span></nav>
+    <h1 class="pkop-t" id="pt" data-split>Kom langs op het hok<span class="punt">.</span></h1>
+    <p class="pkop-sub" data-in>Een duif koop je niet van een foto. Maak een afspraak, neem ze in de hand en beslis dan.</p>
+  </div>
+</section>
+
+<section class="sectie licht contact" aria-label="Contact opnemen">
+  <div class="omslag contact-in">
+    <div class="contact-form">
+      <h2 class="titel" data-split>Stuur een bericht</h2>
+      <p class="contact-intro" data-in>Stel je vraag of zeg welke duif je wil zien. We antwoorden binnen twee werkdagen.</p>
+
+      <form id="contactForm" class="form" action="contact.php" method="post" novalidate data-in>
+        <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="rij">
+          <label class="veld"><span>Naam</span><input type="text" name="name" autocomplete="name" required></label>
+          <label class="veld"><span>E-mail</span><input type="email" name="email" autocomplete="email" required></label>
+        </div>
+        <div class="rij">
+          <label class="veld"><span>Telefoon <em>(optioneel)</em></span><input type="tel" name="phone" autocomplete="tel"></label>
+          <label class="veld"><span>Waarover gaat het?</span>
+            <select name="subject" id="cSubject">
+              <option>Duif aankopen</option>
+              <option>Hokbezoek plannen</option>
+              <option>Wachtlijst jongen 2027</option>
+              <option>Andere vraag</option>
+            </select>
+          </label>
+        </div>
+        <label class="veld" id="cDuifWrap"><span>Welke duif?</span>
+          <select name="pigeon" id="cDuif"><option value="">Nog geen keuze</option></select>
+        </label>
+        <label class="veld"><span>Bericht</span><textarea name="message" rows="4" required></textarea></label>
+        <label class="akkoord"><input type="checkbox" name="consent" value="ja" required><span>Ik ga akkoord dat mijn gegevens gebruikt worden om mijn vraag te beantwoorden.</span></label>
+        <div class="form-eind">
+          <button class="knop knop-inkt" type="submit" data-magneet><span>Verstuur bericht</span></button>
+          <p class="form-noot" id="formNote" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+
+    <aside class="contact-direct" data-in>
+      <h2 class="label mono">Of rechtstreeks</h2>
+      <dl>
+        <div><dt class="mono">Bel</dt><dd><a href="tel:+32400000000">+32 400 00 00 00</a></dd></div>
+        <div><dt class="mono">Mail</dt><dd><a href="mailto:info@teamnoelwillockx.be">info@teamnoelwillockx.be</a></dd></div>
+        <div><dt class="mono">Hok</dt><dd>Straat en nummer<br>Postcode Gemeente, België</dd></div>
+        <div><dt class="mono">Bezoek</dt><dd>Enkel op afspraak, ook op zaterdag</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>

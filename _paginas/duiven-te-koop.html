@@ -1,0 +1,38 @@
+<!-- {"title": "Duiven te koop · Team Noel-Willockx", "desc": "Reisduiven te koop bij Team Noel-Willockx: jongen en jaarlingen uit bewezen koppels, met afstamming, uitslagen van de ouders en prijs."} -->
+<section class="pkop donker" aria-labelledby="pt">
+  <canvas class="pkop-oog" data-zaad="BE26-6041187" data-kleur="oranje" aria-hidden="true"></canvas>
+  <div class="omslag pkop-in">
+    <nav class="kruimel mono" aria-label="Kruimelpad" data-in><a href="index.html">Home</a><span aria-current="page">Duiven te koop</span></nav>
+    <h1 class="pkop-t" id="pt" data-split>Duiven te koop<span class="punt">.</span></h1>
+    <p class="pkop-sub" data-in>Jongen en jaarlingen uit onze beste koppels. Elke duif vertrekt met stamkaart en eigendomsbewijs. Afhalen op het hok of verzending in overleg.</p>
+  </div>
+</section>
+
+<section class="sectie licht koop" aria-labelledby="koop-t">
+  <h2 id="koop-t" class="sr">Het aanbod</h2>
+  <div class="omslag">
+    <form class="filters" id="filters" aria-label="Duiven filteren" onsubmit="return false">
+      <fieldset class="seg">
+        <legend class="sr">Geslacht</legend>
+        <label><input type="radio" name="geslacht" value="" checked><span>Alle</span></label>
+        <label><input type="radio" name="geslacht" value="doffer"><span>Doffers</span></label>
+        <label><input type="radio" name="geslacht" value="duivin"><span>Duivinnen</span></label>
+      </fieldset>
+      <label class="sel"><span class="mono">Bloedlijn</span>
+        <select name="lijn" id="fLijn"><option value="">Alle lijnen</option></select>
+      </label>
+      <label class="sel"><span class="mono">Sorteer</span>
+        <select name="sort" id="fSort">
+          <option value="nieuw">Nieuwste eerst</option>
+          <option value="laag">Prijs oplopend</option>
+          <option value="hoog">Prijs aflopend</option>
+        </select>
+      </label>
+      <p class="telling mono" id="fCount" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+  <div class="duiven omslag" id="duiven"></div>
+  <p class="leeg omslag" id="duivenLeeg" hidden>Geen duiven met deze filters. <button type="button" class="linkknop" id="fReset">Toon alle duiven</button></p>
+</section>
+
+<!-- @uitnodiging -->
